@@ -23,8 +23,9 @@ const CEIL_DMG_MS = 180;  // ms between ceiling damage ticks
 const PT = { NORMAL: 0, SPIKE: 1, SPRING: 2, CONV_L: 3, CONV_R: 4, WOOD: 5 };
 const MIN_SEG_W = 70;   // minimum platform segment width
 
-// Supabase — read from config.js (window.GAME_CONFIG), with safe fallback
-const SB_URL  = (window.GAME_CONFIG && window.GAME_CONFIG.SB_URL)  || 'https://uganjsnopnievufjlqga.supabase.co';
+// Supabase — read from config.js (window.GAME_CONFIG). If config is
+// missing, both stay empty and online mode disables itself gracefully.
+const SB_URL  = (window.GAME_CONFIG && window.GAME_CONFIG.SB_URL)  || '';
 const SB_ANON = (window.GAME_CONFIG && window.GAME_CONFIG.SB_ANON) || '';
 
 // Floor body / top-strip colours per type
