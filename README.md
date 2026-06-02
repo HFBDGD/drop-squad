@@ -6,7 +6,7 @@ Built with [Phaser 3](https://phaser.io). Runs entirely in the browser — no in
 
 ## Play
 
-▶ **[Play here](#)** &nbsp;_(GitHub Pages link goes here once published)_
+▶ **[Play here](https://hfbdgd.github.io/drop-squad/)**
 
 ## Modes
 
