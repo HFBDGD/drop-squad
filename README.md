@@ -40,7 +40,7 @@ To play across devices on the same Wi-Fi, point a phone or tablet at `http://<yo
 
 ## Online multiplayer
 
-Online play uses [Supabase Realtime](https://supabase.com/realtime) broadcast channels (pub/sub only — no data is stored). The publishable anon key in `config.js` is safe to expose: all database tables are protected by row-level security, and the realtime channels carry nothing but ephemeral player positions.
+Online play uses [Supabase Realtime](https://supabase.com/realtime) broadcast channels (pub/sub only — no data is stored). The publishable anon key in `config.js` is safe to expose: it belongs to a dedicated, empty Supabase project used solely for this game's realtime channels. It is fully isolated from any other project and contains no data, so there is nothing for the key to protect.
 
 ## Tech
 
